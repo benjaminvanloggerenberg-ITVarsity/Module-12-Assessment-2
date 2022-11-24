@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <p><a href="./index.html">home</a></p>
+   <p id="outputText"></p>
+    <script>
+        var text1 = "10";
+        var text2 = "2";
+
+        var num1 = stringToNumber(text1);
+        var num2 = stringToNumber(text2);
+
+        if(isNaN((num1) || isNaN(num2))){
+            document.getElementById("outputTxext").innerHTML = "you have not typed a valid number try again.";
+        }
+        else{
+            document.getElementById("outputText").innerHTML = num1 + num2;
+        }
+        
+        function stringToNumber(text){
+            return parseInt(text);
+        }
+
+    </script>
+</body>
+</html>

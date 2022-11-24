@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <a href="./index.html">home</a>
+    
+    <h1 id="heading" onclick="changeText()">JavaScript</h1>
+    <p id="addition"></p>    
+    <script>
+        document.getElementById("addition").innerHTML = addNumbers(5, 110);
+        
+        function changeText(){
+            if(document.getElementById("heading").innerHTML=='JavaScript'){
+                document.getElementById("heading").innerHTML='Is awesome'
+            }
+            else{
+                document.getElementById("heading").innerHTML='JavaScript'}
+            }
+        
+
+        function addNumbers(num1, num2){
+            return num1 + num2;
+        }    
+
+    </script>
+</body>
+</html>
